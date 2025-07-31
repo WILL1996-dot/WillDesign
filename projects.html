@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Project Details - Will Design</title>
+
+  <!-- Font Awesome for icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+  <style>
+    /* General resets */
+    body, ul {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #121212;
+      color: #fff;
+    }
+
+    /* Header styles */
+    .main-header {
+      background-color: #1f1f1f;
+      padding: 15px 30px;
+      display: flex;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo i {
+      font-size: 24px;
+      color: #f0db4f;
+      margin-right: 10px;
+    }
+
+    .brand-name {
+      font-size: 24px;
+      font-weight: bold;
+      color: #ffffff;
+    }
+
+    .extra-icon {
+      color: #f0db4f;  
+      margin-left: 6px;
+      font-size: 18px;
+      vertical-align: middle;
+    }
+
+    /* Navbar styles */
+    nav {
+      background: linear-gradient(90deg, #000000 0%, gold 100%);
+      padding: 10px 20px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    nav ul li a {
+      color: #ddd;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 16px;
+      padding: 8px 12px;
+      display: block;
+      transition: all 0.3s ease;
+      border-radius: 4px;
+    }
+
+    nav ul li a:hover {
+      color: #fff;
+      background-color: #666666;
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+      }
+    }
+
+    /* Projects section */
+    .projects-container {
+      max-width: 900px;
+      margin: 40px auto 80px;
+      padding: 20px;
+      background-color: #1f1f1f;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    }
+
+    .projects-header {
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    .projects-header h1 {
+      font-size: 28px;
+      margin: 0;
+    }
+
+    .project-list {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .project-item {
+      background-color: #292929;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+      transition: background-color 0.3s ease;
+      cursor: default;
+    }
+
+    .project-item:hover {
+      background-color: #3a3a3a;
+    }
+
+    .project-title {
+      font-size: 22px;
+      font-weight: 700;
+      margin-bottom: 10px;
+      color: #f0db4f;
+    }
+
+    .project-description {
+      font-size: 16px;
+      line-height: 1.5;
+      color: #ccc;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="main-header">
+    <div class="logo">
+      <i class="fas fa-paint-brush"></i>
+      <span class="brand-name">
+        Will Design
+        <i class="fas fa-star extra-icon"></i>
+      </span>
+    </div>
+  </header>
+
+  <!-- Navigation bar -->
+  <nav>
+     <ul>
+	<li><a href="home.html">Home</a></li>
+      <li><a href="aboutme.html">About</a></li>
+      <li><a href="projects.html">Project details</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="popuprecommendation.html">Recommendations</a></li>
+    </ul>
+  </nav>
+
+  <!-- Projects content -->
+  <section class="projects-container">
+    <div class="projects-header">
+      <h1>Project Details</h1>
+      <p style="color:#ccc;">Here are 3 key projects I've worked on, showcasing my skills and creativity.</p>
+    </div>
+
+    <div class="project-list">
+      <div class="project-item">
+        <div class="project-title">Portfolio Website</div>
+        <div class="project-description">
+          Developed a responsive portfolio website using HTML, CSS, and JavaScript to showcase my work and skills with a clean, user-friendly interface.
+        </div>
+      </div>
+
+      <div class="project-item">
+        <div class="project-title">Task Management App</div>
+        <div class="project-description">
+          Created a task management web app with user authentication, task creation, and progress tracking using React and Firebase.
+        </div>
+      </div>
+
+      <div class="project-item">
+        <div class="project-title">E-commerce Product Page</div>
+        <div class="project-description">
+          Built a dynamic product page featuring image galleries, reviews, and cart integration, focusing on usability and performance.
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
