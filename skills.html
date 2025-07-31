@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Skills - Will Design</title>
+
+  <!-- Font Awesome for icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+  <style>
+    /* General resets */
+    body, ul {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #121212;
+      color: #fff;
+    }
+
+    /* Header styles */
+    .main-header {
+      background-color: #1f1f1f;
+      padding: 15px 30px;
+      display: flex;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo i {
+      font-size: 24px;
+      color: #f0db4f;
+      margin-right: 10px;
+    }
+
+    .brand-name {
+      font-size: 24px;
+      font-weight: bold;
+      color: #ffffff;
+    }
+
+    .extra-icon {
+      color: #f0db4f;  
+      margin-left: 6px;
+      font-size: 18px;
+      vertical-align: middle;
+    }
+
+    /* Navbar styles */
+    nav {
+      background: linear-gradient(90deg, #000000 0%, gold 100%);
+      padding: 10px 20px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    nav ul li a {
+      color: #ddd;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 16px;
+      padding: 8px 12px;
+      display: block;
+      transition: all 0.3s ease;
+      border-radius: 4px;
+    }
+
+    nav ul li a:hover {
+      color: #fff;
+      background-color: #666666;
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+      }
+    }
+
+    /* Skills section */
+    .skills-container {
+      max-width: 900px;
+      margin: 40px auto 80px;
+      padding: 20px;
+      background-color: #1f1f1f;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    }
+
+    .skills-header {
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    .skills-header h1 {
+      font-size: 28px;
+      margin: 0;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+      gap: 25px;
+      justify-items: center;
+    }
+
+    .skill-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #292929;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+      transition: background-color 0.3s ease;
+      cursor: default;
+    }
+
+    .skill-item:hover {
+      background-color: #3a3a3a;
+    }
+
+    .skill-icon {
+      font-size: 48px;
+      color: #f0db4f;
+      margin-bottom: 12px;
+    }
+
+    .skill-name {
+      font-size: 18px;
+      font-weight: 600;
+      text-align: center;
+      color: #eee;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="main-header">
+    <div class="logo">
+      <i class="fas fa-paint-brush"></i>
+      <span class="brand-name">
+        Will Design
+        <i class="fas fa-star extra-icon"></i>
+      </span>
+    </div>
+  </header>
+
+  <!-- Navigation bar -->
+  <nav>
+    <ul>
+	<li><a href="home.html">Home</a></li>
+      <li><a href="aboutme.html">About</a></li>
+      <li><a href="projects.html">Project details</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="popuprecommendation.html">Recommendations</a></li>
+    </ul>
+  </nav>
+
+  <!-- Skills content -->
+  <section class="skills-container">
+    <div class="skills-header">
+      <h1>My Skills</h1>
+      <p style="color:#ccc;">3 new skills have been added! Here are all 5 skills I’ve mastered so far.</p>
+    </div>
+
+    <div class="skills-grid">
+      <!-- Original Skills -->
+      <div class="skill-item">
+        <i class="fab fa-html5 skill-icon" title="HTML5"></i>
+        <div class="skill-name">HTML5</div>
+      </div>
+
+      <div class="skill-item">
+        <i class="fab fa-css3-alt skill-icon" title="CSS3"></i>
+        <div class="skill-name">CSS3</div>
+      </div>
+
+      <!-- New Skills -->
+      <div class="skill-item">
+        <i class="fab fa-js-square skill-icon" title="JavaScript"></i>
+        <div class="skill-name">JavaScript</div>
+      </div>
+
+      <div class="skill-item">
+        <i class="fab fa-react skill-icon" title="React"></i>
+        <div class="skill-name">React</div>
+      </div>
+
+      <div class="skill-item">
+        <i class="fas fa-database skill-icon" title="Database Management"></i>
+        <div class="skill-name">Database Management</div>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
